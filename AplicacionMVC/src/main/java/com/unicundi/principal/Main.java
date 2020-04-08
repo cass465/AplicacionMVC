@@ -5,6 +5,8 @@
  */
 package com.unicundi.principal;
 
+import com.unicundi.graficas.Ventana;
+
 /**
  *
  * @author cass465
@@ -16,6 +18,7 @@ public class Main {
      */
     public static void main(String[] args) {
         // TODO code application logic here
+        new Ventana("Listado con MVC");
     }
     
 }

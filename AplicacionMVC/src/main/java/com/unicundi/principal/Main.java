@@ -9,17 +9,17 @@ import com.unicundi.graficas.Ventana;
 import com.unicundi.modelo.Persona;
 import com.unicundi.controlador.InsertarPersona;
 
-
 import java.util.ArrayList;
 import java.util.List;
 
 /**
- *
- * @author cass465
+ * Clase principal 
+ * @author Camilo Sanabria
+ * @version 1.0.0
  */
 public class Main {
 
-    /**
+    /** Metodo donde se ejecuta la aplicacion
      * @param args the command line arguments
      */
     public static void main(String[] args) {
@@ -29,9 +29,6 @@ public class Main {
         Ventana ventana = new Ventana("LISTADO MVC");
 
         InsertarPersona insertar = new InsertarPersona(personas, ventana);
-        
-        
-        insertar.iniciar();
 
     }
 

@@ -15,20 +15,37 @@ import java.util.List;
 import javax.swing.DefaultListModel;
 
 /**
+ * Clase controlador que permite insertar personas desde la vista
  *
- * @author YEISON
+ * @author Yeison Cifuentes
+ * @version 1.0.0
  */
 public class InsertarPersona implements ActionListener {
 
+    /**
+     * Lista de las personas que son agregadas 
+     */
     private List<Persona> personas;
+    /**
+     * Vista de la aplicación
+     */
     private Ventana ventana;
 
+     /**
+      * Metodo constructor de la clase
+      * @param personas lista de personas que seran agregadas 
+      * @param ventana vista principal de la aplicacion
+      */
     public InsertarPersona(List<Persona> personas, Ventana ventana) {
         this.personas = personas;
         this.ventana = ventana;
         this.ventana.agregar.addActionListener(this);
     }
 
+    /**
+     * Metodo que se dispara cuando el boton es presionado
+     * @param evento evento de la vista
+     */
     public void actionPerformed(ActionEvent evento) {
 
         DefaultListModel modelo = new DefaultListModel();//Modelo para insertar los datos en el JList

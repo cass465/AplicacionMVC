@@ -6,27 +6,29 @@
 package com.unicundi.modelo;
 
 /**
+ * Clase que tiene los datos de la persona
  *
- * @author YEISON
+ * @author Yeison Cifuentes
+ * @version 1.0.0
  */
 public class Persona {
+
+    /**
+     * Nombre de la persona
+     */
     private String nombre;
-    
-    public Persona(String nombre){
-        this.nombre=nombre;
+
+    public Persona(String nombre) {
+        this.nombre = nombre;
     }
 
+     /**
+     * Obtiene el nombre de la persona
+     *
+     * @return nombre
+     */
     public String getNombre() {
         return nombre;
     }
 
-    public void setNombre(String nombre) {
-        this.nombre = nombre;
-    }
-    
-    
-    
-    
-    
-    
 }

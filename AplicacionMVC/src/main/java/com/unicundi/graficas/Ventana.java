@@ -19,16 +19,34 @@ import javax.swing.JTextField;
 import javax.swing.border.TitledBorder;
 
 /**
+ * Clase que tiene los componentes y configuracion de la vista
  *
- * @author cass465
+ * @author Camilo Sanabria
+ * @version 1.0.0
  */
 public class Ventana extends JFrame {
 
+    /**
+     * Panel de la vista
+     */
     private JPanel panel;
+    /**
+     * Campo de texto que recibe el nombre
+     */
     public JTextField nombre;
+    /**
+     * lista que muestra los nombres de las personas
+     */
     public JList listado;
+    /**
+     * Boton que agrega a las personas
+     */
     public JButton agregar;
 
+    /**
+     * Constructor de la vista
+     * @param titulo recibe el titulo de la ventana
+     */
     public Ventana(String titulo) {
         super(titulo);
         this.iniciar();
@@ -39,6 +57,9 @@ public class Ventana extends JFrame {
         this.setVisible(true);
     }
 
+    /**
+     * Inicia la ventana
+     */
     public void iniciar() {
         Dimension dims = new Dimension(600, 220);
         this.setSize(dims);
@@ -49,6 +70,9 @@ public class Ventana extends JFrame {
         this.setDefaultCloseOperation(JFrame.EXIT_ON_CLOSE);
     }
 
+    /**
+     * Configuración de todos los componentes dentro de la ventana
+     */
     private void configurarComponentes() {
         // crear panel
         panel = new JPanel(new GridBagLayout());

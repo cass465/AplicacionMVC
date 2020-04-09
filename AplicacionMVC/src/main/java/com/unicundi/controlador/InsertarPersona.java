@@ -39,23 +39,25 @@ public class InsertarPersona implements ActionListener {
     public InsertarPersona(List<Persona> personas, Ventana ventana) {
         this.personas = personas;
         this.ventana = ventana;
-        this.ventana.agregar.addActionListener(this);
+        this.ventana.getAgregar().addActionListener(this);
     }
 
+   
     /**
      * Metodo que se dispara cuando el boton es presionado
      * @param evento evento de la vista
      */
+      @Override
     public void actionPerformed(ActionEvent evento) {
 
         DefaultListModel modelo = new DefaultListModel();//Modelo para insertar los datos en el JList
 
-        this.personas.add(new Persona(ventana.nombre.getText()));
+        this.personas.add(new Persona(ventana.getNombre().getText()));
 
         for (Persona persona : this.personas) {
 
             modelo.addElement(persona.getNombre());
         }
-        ventana.listado.setModel(modelo);//Añade el modelo al JList
+        ventana.getListado().setModel(modelo);//Añade el modelo al JList
     }
 }

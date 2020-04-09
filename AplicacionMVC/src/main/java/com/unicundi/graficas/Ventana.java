@@ -33,15 +33,15 @@ public class Ventana extends JFrame {
     /**
      * Campo de texto que recibe el nombre
      */
-    public JTextField nombre;
+    private JTextField nombre;
     /**
      * lista que muestra los nombres de las personas
      */
-    public JList listado;
+    private JList listado;
     /**
      * Boton que agrega a las personas
      */
-    public JButton agregar;
+    private JButton agregar;
 
     /**
      * Constructor de la vista
@@ -51,9 +51,6 @@ public class Ventana extends JFrame {
         super(titulo);
         this.iniciar();
         this.configurarComponentes();
-        //this.asignarEventos();
-
-        this.pack();
         this.setVisible(true);
     }
 
@@ -112,4 +109,18 @@ public class Ventana extends JFrame {
         
         this.add(panel, BorderLayout.NORTH);
     }
+
+    public JTextField getNombre() {
+        return nombre;
+    }
+
+    public JList getListado() {
+        return listado;
+    }
+
+    public JButton getAgregar() {
+        return agregar;
+    }
+    
+    
 }

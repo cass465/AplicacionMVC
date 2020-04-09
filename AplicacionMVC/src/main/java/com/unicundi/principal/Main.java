@@ -26,8 +26,7 @@ public class Main {
         // TODO code application logic here
         List<Persona> personas = new ArrayList<Persona>();
         Ventana ventana = new Ventana("LISTADO MVC");
-
-        InsertarPersona insertar = new InsertarPersona(personas, ventana);
+        new InsertarPersona(personas, ventana);
 
     }
 

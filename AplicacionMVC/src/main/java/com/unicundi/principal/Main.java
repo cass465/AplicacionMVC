@@ -24,15 +24,10 @@ public class Main {
      */
     public static void main(String[] args) {
         // TODO code application logic here
-
-        List<Persona> personas = new ArrayList<>();
+        List<Persona> personas = new ArrayList<Persona>();
         Ventana ventana = new Ventana("LISTADO MVC");
 
         InsertarPersona insertar = new InsertarPersona(personas, ventana);
-        
-        
-        insertar.iniciar();
-
     }
 
 }

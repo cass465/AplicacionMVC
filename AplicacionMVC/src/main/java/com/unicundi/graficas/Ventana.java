@@ -25,17 +25,14 @@ import javax.swing.border.TitledBorder;
 public class Ventana extends JFrame {
 
     private JPanel panel;
-    public JTextField nombre;
-    public JList listado;
-    public JButton agregar;
+    private JTextField nombre;
+    private JList listado;
+    private JButton agregar;
 
     public Ventana(String titulo) {
         super(titulo);
         this.iniciar();
         this.configurarComponentes();
-        //this.asignarEventos();
-
-        this.pack();
         this.setVisible(true);
     }
 
@@ -88,4 +85,18 @@ public class Ventana extends JFrame {
         
         this.add(panel, BorderLayout.NORTH);
     }
+
+    public JTextField getNombre() {
+        return nombre;
+    }
+
+    public JList getListado() {
+        return listado;
+    }
+
+    public JButton getAgregar() {
+        return agregar;
+    }
+    
+    
 }

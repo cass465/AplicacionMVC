@@ -6,6 +6,12 @@
 package com.unicundi.principal;
 
 import com.unicundi.graficas.Ventana;
+import com.unicundi.modelo.Persona;
+import com.unicundi.controlador.InsertarPersona;
+
+
+import java.util.ArrayList;
+import java.util.List;
 
 /**
  *
@@ -18,7 +24,15 @@ public class Main {
      */
     public static void main(String[] args) {
         // TODO code application logic here
-        new Ventana("Listado con MVC");
+
+        List<Persona> personas = new ArrayList<>();
+        Ventana ventana = new Ventana("LISTADO MVC");
+
+        InsertarPersona insertar = new InsertarPersona(personas, ventana);
+        
+        
+        insertar.iniciar();
+
     }
-    
+
 }

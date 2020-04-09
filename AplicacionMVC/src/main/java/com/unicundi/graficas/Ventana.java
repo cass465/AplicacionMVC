@@ -25,9 +25,9 @@ import javax.swing.border.TitledBorder;
 public class Ventana extends JFrame {
 
     private JPanel panel;
-    private JTextField nombre;
-    private JList listado;
-    private JButton agregar;
+    public JTextField nombre;
+    public JList listado;
+    public JButton agregar;
 
     public Ventana(String titulo) {
         super(titulo);

@@ -18,6 +18,10 @@ public class Persona {
      */
     private String nombre;
 
+    /**
+     * Constructor de clase
+     * @param nombre nombre de la persona
+     */
     public Persona(String nombre) {
         this.nombre = nombre;
     }

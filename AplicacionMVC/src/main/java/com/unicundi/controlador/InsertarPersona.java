@@ -7,7 +7,6 @@ package com.unicundi.controlador;
 
 import java.awt.event.ActionEvent;
 import java.awt.event.ActionListener;
-import javax.swing.JFrame;
 
 import com.unicundi.modelo.Persona;
 import com.unicundi.graficas.Ventana;
